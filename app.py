@@ -27,7 +27,7 @@ final_input = [user_input]
 
 import pickle
 
-with open('iris_model.pkl', 'wb') as f:
+with open('iris_model.pkl', 'rb') as f:
   chatgpt = pickle.load(f)
 
 final_ans = chatgpt.predict(final_input)[0]
